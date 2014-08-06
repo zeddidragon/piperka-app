@@ -17,9 +17,3 @@
   <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
   <icon src="icon.png" />
 </widget>
-
-<herps>
-  <herp param="whatever">more content</herp>
-  <herp param="whatever">content</herp>
-</herps>
-
