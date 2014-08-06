@@ -1,0 +1,19 @@
+<ion-view title='Login'>
+  <ion-content has-header='true' has-tabs='true'>
+    <form ng-submit='login()'>
+      <label class='item item-input piperka-input'>
+        <span class='input-label'>Username</span>
+        <input ng-model='credentials.username' type='text'>
+      </label>
+      <label class='item item-input piperka-input'>
+        <span class='input-label'>Password</span>
+        <input ng-model='credentials.password' type='password'>
+      </label>
+      <div class='padding'>
+        <button class='button button-block' ng-hide='$root.isLoading' type='submit'>Login</button>
+      </div>
+      <div ng-show='token'>You are logged in as {{ name }}.</div>
+      <div ng-hide='token'>You are not logged in.</div>
+    </form>
+  </ion-content>
+</ion-view>

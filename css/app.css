@@ -1,0 +1,33 @@
+/* Your app's SASS, go crazy, make it your own */
+ion-content {
+  background: #eee; }
+
+ion-nav-bar.bar.bar-header {
+  background-color: #ddd !important; }
+  ion-nav-bar.bar.bar-header h1.title {
+    font-weight: bold;
+    font-size: 1.5em;
+    background: url("/img/paprika.png") no-repeat 0 100%;
+    background-size: contain; }
+
+.item.item-complex {
+  background-color: #eee;
+  color: black;
+  padding: 0.3em; }
+  .item.item-complex h3 {
+    color: -webkit-link; }
+
+.tab-item .icon.paprika.red {
+  background: url("/img/paprika-red.png") no-repeat center center; }
+.tab-item .icon.paprika.yellow {
+  background: url("/img/paprika-yellow.png") no-repeat center center; }
+.tab-item .icon.paprika.green {
+  background: url("/img/paprika-green.png") no-repeat center center; }
+
+.loading-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  z-index: 10; }

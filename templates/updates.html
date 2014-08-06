@@ -1,0 +1,16 @@
+<ion-view title='Updates'>
+  <ion-content has-header='true' has-tabs='true'>
+    <div class='login-warning' ng-show='failed'>Failed to retrieve updates. Have you logged in?</div>
+    <div class='no-updates' ng-show='noUpdates'>No updates found.</div>
+    <ion-list>
+      <div class='item item-complex' ng-click='redirectTo(update)' ng-repeat='update in updates|filter:search|filter:countFilter' type='item-text-wrap'>
+        <h3>{{update.title}}</h3>
+        <p>{{update.count}} new</p>
+      </div>
+    </ion-list>
+  </ion-content>
+  <div class='bar bar-footer'></div>
+  <ion-footer-bar align-title='left'>
+    <input class='piperka-input' ng-model='search.title' placeholder='Search title' type='search'>
+  </ion-footer-bar>
+</ion-view>
