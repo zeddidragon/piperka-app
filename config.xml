@@ -7,15 +7,7 @@
   <author email='zed_di_dragon@hotmail.com'>
     Tony A. sSæle
   </author>
-  <feature name="App">
-    <param name="android-package" value="org.apache.cordova.App" />
-  </feature>
-  <feature name="Device">
-    <param name="android-package" value="org.apache.cordova.device.Device" />
-  </feature>
-  <feature name="InAppBrowser">
-    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-  </feature>
+  <gap:plugin name="org.li8.inappbrowser" version="0.1" />
   <content src='index.html' />
   <access origin='*' />
   <preference name='fullscreen' value='false' />
