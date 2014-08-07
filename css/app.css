@@ -7,7 +7,7 @@ ion-nav-bar.bar.bar-header {
   ion-nav-bar.bar.bar-header h1.title {
     font-weight: bold;
     font-size: 1.5em;
-    background: url("/img/paprika.png") no-repeat 0 100%;
+    background: url("../img/paprika.png") no-repeat 0 100%;
     background-size: contain; }
 
 .item.item-complex {
@@ -18,11 +18,11 @@ ion-nav-bar.bar.bar-header {
     color: -webkit-link; }
 
 .tab-item .icon.paprika.red {
-  background: url("/img/paprika-red.png") no-repeat center center; }
+  background: url("../img/paprika-red.png") no-repeat center center; }
 .tab-item .icon.paprika.yellow {
-  background: url("/img/paprika-yellow.png") no-repeat center center; }
+  background: url("../img/paprika-yellow.png") no-repeat center center; }
 .tab-item .icon.paprika.green {
-  background: url("/img/paprika-green.png") no-repeat center center; }
+  background: url("../img/paprika-green.png") no-repeat center center; }
 
 .loading-icon {
   position: absolute;
