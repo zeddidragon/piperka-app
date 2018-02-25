@@ -7,7 +7,7 @@
   <author email='zed_di_dragon@hotmail.com'>
     Tony A. Sæle
   </author>
-  <gap:plugin name="org.li8.inappbrowser" version="0.1" />
+  <plugin name="cordova-plugin-inappbrowser" spec="^2.0.2" />
   <content src='index.html' />
   <access origin='*' />
   <preference name='fullscreen' value='false' />
