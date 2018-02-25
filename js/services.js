@@ -5,7 +5,7 @@
         all: function(login) {
           var token, username, _ref;
           _ref = LoginService.get(), username = _ref[0], token = _ref[1];
-          return $http.get("http://piperka.net/s/uprefs?token=" + token).then(function(response) {
+          return $http.get("https://piperka.net/s/uprefs?token=" + token).then(function(response) {
             var comic, currentPage, id, offset, remainingPages, totalPages, updates;
             if (response.data.subscriptions) {
               updates = (function() {
@@ -39,10 +39,10 @@
         location: function(comic) {
           var token, username, _ref;
           _ref = LoginService.get(), username = _ref[0], token = _ref[1];
-          return "http://piperka.net/updates.html?redir=" + comic.id + "&csrf_ham=" + token;
+          return "https://piperka.net/updates.html?redir=" + comic.id + "&csrf_ham=" + token;
         },
         titles: function() {
-          return $http.get('http://piperka.net/d/comictitles').then(function(response) {
+          return $http.get('https://piperka.net/d/comictitles').then(function(response) {
             localStorage.setItem('titles', angular.fromJson(response.data));
             return response.data;
           });
@@ -76,7 +76,7 @@
           return [localStorage.getItem('username'), localStorage.getItem('token')];
         },
         login: function(login) {
-          return $http.post("http://piperka.net/s/login?user=" + login.username + "&passwd=" + login.password).success(function(data) {
+          return $http.post("https://piperka.net/s/login?user=" + login.username + "&passwd=" + login.password).success(function(data) {
             var name, token;
             token = data.csrf_ham;
             name = data.name;
